@@ -22,5 +22,13 @@ public class Task {
     @Column(name = "done")
     private boolean done;
 
+    public Task() {
+    }
 
+    public Task(long id, long userId, String description, boolean done) {
+        this.id = id;
+        this.userId = userId;
+        this.description = description;
+        this.done = done;
+    }
 }
